@@ -10,7 +10,7 @@
 
     <link rel="icon" href="assets/favicon.png" type="image/png">
     
-   
+   <script src="script.js" defer></script>
 
     <link rel="stylesheet" href="index.css">
     <title>Aivazovski</title>
@@ -18,6 +18,7 @@
 <body>
 
     
+
     <header class="header">
         <div class="container">
             <nav class="nav">
@@ -32,12 +33,31 @@
         </div>
     </header>
 
+    <div class="mobile-navigation">
+        <label for="toggler">
+            <img src="assets/burger.png" alt="" class="burger-nav">
+        </label>
+        <input type="checkbox" id="toggler" class="mobile-nav-toggler">
+
+        <nav class="mobile-nav-menu">
+                <ul class="mobile-nav-list">
+                    <li><a href="#home" class="mobile-nav-link" data-link-mobile>Home</a></li>
+                    <li><a href="#about" class="mobile-nav-link" data-link-mobile>About</a></li>
+                    <li><a href="#history" class="mobile-nav-link" data-link-mobile>History</a></li>
+                    <li><a href="#portfolio" class="mobile-nav-link" data-link-mobile>Portfolio</a></li>
+                    <li><a href="#contacts" class="mobile-nav-link" data-link-mobile>Contacts</a></li>
+                </ul>
+                <label for="toggler">
+                    <img src="assets/close.png" alt="" class="close-nav">
+                </label>
+        </nav>
+    </div>
+
     <main class="main-home" id="home">
         <div class="container">
             <h1 class="home_heading">Ivan Constantinovich Aivazovski</h1>
             <p class="home_title">Russian marine painter of Armenian origin, collector, philanthropist</p>
-            
-                <img src="assets/webp/home.webp" alt="" class="home_img">
+            <img src="assets/webp/home.webp" alt="" class="home_img">
         </div>
     </main>
 
@@ -55,10 +75,35 @@
     <main class="main-history" id="history">
         <div class="container">
             <h1 class="history_heading">History</h1>
-                <img src="assets/webp/history.webp" alt="" class="history_img">
+            <img src="assets/webp/history.webp" alt="" class="history_img">
             <p class="history_description">Дом в котором родился Айвазовский | The house where Aivazovsky was born </p>
         </div>
     </main>
 
+    <main class="main-portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="portfolio_heading">Portfolio</h1>
+            <img src="assets/webp/portfolio_1.webp" alt="" class="portfolio_img">
+            <p class="portfolio_description">Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857</p>
+            <img src="assets/webp/portflio_2.webp" alt="" class="portfolio_img">
+            <p class="portfolio_description">Радуга, 1873 г. | Rainbow, 1873</p>
+            <img src="assets/webp/portfolio_3.webp" alt="" class="portfolio_img">
+            <p class="portfolio_description">Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893</p>
+        </div>
+    </main>
+
+
+    <footer class="footer-contacts" id="contacts">
+        <div class="container">
+            <h1 class="footer_heading">More</h1>
+
+            <button class="footer_btn">
+                <a href="https://uk.wikipedia.org/wiki/%D0%90%D0%B9%D0%B2%D0%B0%D0%B7%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%86%D0%B2%D0%B0%D0%BD_%D0%9A%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%D0%B8%D1%87" class="footer_wiki">ayvazovskiy.wi</a>
+            </button>
+
+            
+            <p class="footer_description">More works you can see in wikipedia</p>
+        </div>
+    </footer>
 </body>
 </html>
